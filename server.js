@@ -1,5 +1,6 @@
 const { Server } = require("socket.io")
-const { createServer } = require("http")
+//const { createServer } = require("http")
+const { createServer } = require("https")
 const { spawn } = require('child_process');
 
 const httpServer = createServer();
@@ -10,7 +11,7 @@ const io = new Server(httpServer, {
     }
 });
 
-httpServer.listen(443);
+httpServer.listen(3030);
 
 io.on("connection", (socket) => {
     console.log("device connected")
