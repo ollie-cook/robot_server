@@ -6,7 +6,7 @@ const httpServer = createServer();
 //const io = new Server(port);
 const io = new Server(httpServer, {
     cors: {
-      origin: "http://192.168.178.58:3000"
+      origin: "*"
     }
 });
 
