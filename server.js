@@ -1,6 +1,5 @@
 const { Server } = require("socket.io")
-//const { createServer } = require("http")
-const { createServer } = require("https")
+const { createServer } = require("http")
 const { spawn } = require('child_process');
 
 const httpServer = createServer();
