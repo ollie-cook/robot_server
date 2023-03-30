@@ -19,6 +19,6 @@ io.on("connection", (socket) => {
         console.log("move forward received");
 
         //run python script
-        const pythonProcess = spawn('python', ['../testScript.py'])
+        const pythonProcess = spawn('python', ['../3-motors.py'])
     })
 })
