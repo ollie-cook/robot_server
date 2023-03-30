@@ -11,7 +11,7 @@ const io = new Server(httpServer, {
     }
 });
 
-httpServer.listen(443);
+httpServer.listen(3030);
 
 io.on("connection", (socket) => {
     console.log("device connected")
